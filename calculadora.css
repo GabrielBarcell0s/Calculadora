@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+body{
+  margin: 0;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images5.alphacoders.com/885/885377.png");
+  background-size: cover;
+}
+
+.Linha{
+  display: flex;
+  justify-content: center;
+}
+
+.Item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  text-align: center;
+  margin: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.ConteinerVisor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: 150px;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+}
+
+.Visor{
+  background:rgba(128, 128, 128, 0.4);
+  width: 250px;
+  height: 100px;
+  border-radius: 5%;
+  border: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 40px;
+}
+
+.Igual{
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 110px;
+  height: 50px;
+  border-radius: 18%;
+  text-align: center;
+  font-size: 35px;
+  background-color: darkorange;
+  cursor: pointer;
+}
+
+.ConteinerBotoes{
+  padding-top: 15px;
+  width: 300px;
+  height: 320px;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  background-color: rgb(0, 0, 0);
+}
+
+.AC {
+  background-color: rgba(216, 2, 2, 0.74);
+}
+
+.Igual:hover, .Item:hover{
+  animation: zoom 1s;
+}
+
+@keyframes zoom{
+  0%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.1);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
